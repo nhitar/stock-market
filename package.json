@@ -1,0 +1,20 @@
+{
+  "name": "stock-market",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "admin",
+    "user",
+    "server"
+  ],
+  "scripts": {
+    "dev:admin": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=admin\"",
+    "dev:user": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=user\"",
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=user\" \"npm run dev --workspace=admin\"",
+    "test": "npm run test --workspace=user"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
