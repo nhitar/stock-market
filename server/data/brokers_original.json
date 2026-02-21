@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Иван Петров",
+    "initialBalance": 100006,
+    "currentBalance": 1713.58,
+    "createdAt": "2024-11-14",
+    "stocks": {
+      "AAPL": {
+        "quantity": 55,
+        "totalInvested": 9026.13
+      },
+      "MSFT": {
+        "quantity": 263,
+        "totalInvested": 97086.54
+      }
+    }
+  },
+  {
+    "id": "2",
+    "name": "Мария Сидорова",
+    "initialBalance": 150003,
+    "currentBalance": 150006.23,
+    "createdAt": "2024-11-14",
+    "stocks": {}
+  },
+  {
+    "id": "3",
+    "name": "Алексей Козлов",
+    "initialBalance": 200000,
+    "currentBalance": 199263.87,
+    "createdAt": "2024-11-14",
+    "stocks": {
+      "AAPL": {
+        "quantity": 1,
+        "totalInvested": 190.23
+      },
+      "MSFT": {
+        "quantity": 1,
+        "totalInvested": 354.15
+      },
+      "AMZN": {
+        "quantity": 1,
+        "totalInvested": 189.62
+      }
+    }
+  },
+  {
+    "id": "1763335977448",
+    "name": "Трейдер",
+    "initialBalance": 100000,
+    "currentBalance": 99995.92,
+    "createdAt": "2025-11-16T23:32:57.450Z",
+    "stocks": {}
+  }
+]
