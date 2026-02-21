@@ -1,0 +1,249 @@
+.exchange-container {
+  padding: 2rem;
+  background: #1a1a1a;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.exchange-container h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.settings-section {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.settings-section h3 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.settings-section {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.setting-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.setting-field label {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.date-input,
+.number-input {
+  background: #363636;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.setting-input:focus,
+.date-input:focus,
+.number-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.number-input {
+  width: 100px;
+}
+
+.date-input {
+  min-width: 150px;
+}
+
+.save-settings-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.save-settings-btn:hover {
+  background: #5a6fd8;
+}
+
+.trading-section {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.trading-section h3 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.status-info {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.status-info strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.start-trading-btn {
+  background: #15803d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.start-trading-btn:hover {
+  background: #166534;
+}
+
+.stop-trading-btn {
+  background: #dc2626;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.stop-trading-btn:hover {
+  background: #b91c1c;
+}
+
+.prices-section {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.prices-section h3 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.prices-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #363636;
+  border-radius: 5px;
+  border: 1px solid #404040;
+  transition: border-color 0.2s;
+}
+
+.price-item:hover {
+  border-color: #555;
+}
+
+.price-item span:first-child {
+  color: #ccc;
+}
+
+.price-item strong {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.prices-section p {
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .setting-field {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .setting-field label {
+    min-width: 180px;
+  }
+  
+  .date-input {
+    max-width: 200px;
+  }
+  
+  .number-input {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exchange-container {
+    padding: 1rem;
+  }
+  
+  .settings-section,
+  .trading-section,
+  .prices-section {
+    padding: 1rem;
+  }
+  
+  .setting-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .setting-field label {
+    min-width: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .number-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
